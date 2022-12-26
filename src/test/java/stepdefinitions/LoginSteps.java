@@ -36,6 +36,7 @@ public class LoginSteps {
     @Then("I should have access based on my {string}")
     public void iShouldHaveAccessBasedOnMy(String access) {
         switch (access) {
+            // enhanced switch statement
             case "success" -> lps.view_products_page();
             case "distorted" -> lps.view_similar_images();
             case "locked" -> lps.view_error_message();
